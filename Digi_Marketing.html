@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Services - BCP</title>
     <script src="https://kit.fontawesome.com/54a16c130a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #bababa;
+            background-color: #ECF0F3;
             font-family: "Roboto", sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -26,16 +26,55 @@
             justify-content: center;
         }
 
-        .box {
+        .box-a,
+        .box-b,
+        .box-c,
+        .box-d,
+        .box-e,
+        .box-f {
             width: 300px;
             height: 250px;
-            box-shadow: 10px 10px 20px rgb(186, 186, 186);
-            background-color: #005A5B;
+            /* box-shadow: 5px 5px 5px rgb(255, 255, 255); */
             border-radius: 5px;
             padding: 30px;
             display: grid;
             align-items: center;
             text-align: justify;
+            transition: 0.1s ease-out;
+        }
+
+        .box-a:hover,
+        .box-b:hover,
+        .box-c:hover,
+        .box-d:hover,
+        .box-e:hover,
+        .box-f:hover {
+            background-color: #002f31;
+            cursor: pointer;
+        }
+
+        .box-a {
+            background-color: #005A5B;
+        }
+
+        .box-b {
+            background-color: #007369;
+        }
+
+        .box-c {
+            background-color: #008C72;
+        }
+
+        .box-d {
+            background-color: #08403E;
+        }
+
+        .box-e {
+            background-color: #706513;
+        }
+
+        .box-f {
+            background-color: #B57114;
         }
 
         .box_icon {
@@ -54,7 +93,8 @@
         .read_more {
             text-decoration: none;
             color: #fff;
-            font-weight: 700;
+            font-weight: 600;
+            font-size: 15px;
         }
 
         @media screen and (max-width:600px) {
@@ -68,15 +108,56 @@
 <body>
     <section class="container">
         <div class="category">
-            <div class="box">
+            <div class="box-a">
                 <img class="box_icon" src="assets/images/icons/crosshairs-solid.svg" alt="">
-                <h2 class="box_head">Heading</h2>
+                <h2 class="box_head">Social Media Marketing</h2>
+                <p class="box_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam voluptate
+                    unde beatae
+                    asperiores quod totam modi incidunt quia quaerat optio aliquam quisquam?</p>
+                <a class="read_more" href="#">Explore Now</a>
+            </div>
+            <div class="box-b">
+                <img class="box_icon" src="assets/images/icons/crosshairs-solid.svg" alt="">
+                <h2 class="box_head">YouTube Marketing</h2>
+                <p class="box_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam voluptate
+                    unde beatae
+                    asperiores quod totam modi incidunt quia quaerat optio aliquam quisquam?</p>
+                <a class="read_more" href="#">Explore Now</a>
+            </div>
+            <div class="box-c">
+                <img class="box_icon" src="assets/images/icons/crosshairs-solid.svg" alt="">
+                <h2 class="box_head">SEO</h2>
+                <p class="box_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam voluptate
+                    unde beatae
+                    asperiores quod totam modi incidunt quia quaerat optio aliquam quisquam?</p>
+                <a class="read_more" href="#">Explore Now</a>
+            </div>
+            <div class="box-d">
+                <img class="box_icon" src="assets/images/icons/crosshairs-solid.svg" alt="">
+                <h2 class="box_head">Email MArketing</h2>
                 <p class="box_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam voluptate
                     unde beatae
                     asperiores quod totam modi incidunt quia quaerat optio aliquam quisquam?</p>
                 <a class="read_more" href="#">Explore Now</a>
             </div>
 
+            <div class="box-e">
+                <img class="box_icon" src="assets/images/icons/crosshairs-solid.svg" alt="">
+                <h2 class="box_head">Content Marketing</h2>
+                <p class="box_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam voluptate
+                    unde beatae
+                    asperiores quod totam modi incidunt quia quaerat optio aliquam quisquam?</p>
+                <a class="read_more" href="#">Explore Now</a>
+            </div>
+
+            <div class="box-f">
+                <img class="box_icon" src="assets/images/icons/crosshairs-solid.svg" alt="">
+                <h2 class="box_head">Product Promotion</h2>
+                <p class="box_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam voluptate
+                    unde beatae
+                    asperiores quod totam modi incidunt quia quaerat optio aliquam quisquam?</p>
+                <a class="read_more" href="#">Explore Now</a>
+            </div>
         </div>
     </section>
 
