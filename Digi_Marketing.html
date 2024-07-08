@@ -30,7 +30,7 @@
             width: 300px;
             height: 250px;
             box-shadow: 10px 10px 20px rgb(186, 186, 186);
-            background-color: #fff;
+            background-color: #005A5B;
             border-radius: 5px;
             padding: 30px;
             display: grid;
@@ -38,17 +38,23 @@
             text-align: justify;
         }
 
-        .box-icon {
+        .box_icon {
             width: 10%;
         }
 
+        .box_head {
+            color: #fff;
+        }
+
         .box_text {
-            color: #6a6a6a;
+            color: #e7e7e7;
             margin-top: 0;
         }
 
         .read_more {
             text-decoration: none;
+            color: #fff;
+            font-weight: 700;
         }
 
         @media screen and (max-width:600px) {
@@ -63,8 +69,8 @@
     <section class="container">
         <div class="category">
             <div class="box">
-                <img class="box-icon" src="assets/images/icons/crosshairs-solid.svg" alt="">
-                <h2>Heading</h2>
+                <img class="box_icon" src="assets/images/icons/crosshairs-solid.svg" alt="">
+                <h2 class="box_head">Heading</h2>
                 <p class="box_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam voluptate
                     unde beatae
                     asperiores quod totam modi incidunt quia quaerat optio aliquam quisquam?</p>
