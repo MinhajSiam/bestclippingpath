@@ -5,24 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/54a16c130a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #bababa;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
+
 
         .category {
             display: grid;
             grid-template-columns: repeat(3, 350px);
+            column-gap: 20px;
+            row-gap: 10px;
             justify-content: center;
         }
 
         .box {
             width: 300px;
-            height: 300px;
+            height: 250px;
             box-shadow: 10px 10px 20px rgb(186, 186, 186);
             background-color: #fff;
             border-radius: 5px;
-            margin-top: 20px;
+            padding: 30px;
+            display: grid;
+            align-items: center;
+            text-align: justify;
+        }
+
+        .box-icon {
+            width: 10%;
+        }
+
+        .box_text {
+            color: #6a6a6a;
+            margin-top: 0;
+        }
+
+        .read_more {
+            text-decoration: none;
         }
 
         @media screen and (max-width:600px) {
@@ -36,14 +62,20 @@
 <body>
     <section class="container">
         <div class="category">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="box">
+                <img class="box-icon" src="assets/images/icons/crosshairs-solid.svg" alt="">
+                <h2>Heading</h2>
+                <p class="box_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam voluptate
+                    unde beatae
+                    asperiores quod totam modi incidunt quia quaerat optio aliquam quisquam?</p>
+                <a class="read_more" href="#">Explore Now</a>
+            </div>
+
         </div>
     </section>
+
+
+
 </body>
 
 </html>
