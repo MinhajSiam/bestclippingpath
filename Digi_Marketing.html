@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #bababa;
+        }
+
+        .category {
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            justify-content: center;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            box-shadow: 10px 10px 20px rgb(186, 186, 186);
+            background-color: #fff;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width:600px) {
+            .category {
+                grid-template-columns: repeat(1, 350px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="category">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+</body>
+
+</html>
